@@ -1,0 +1,151 @@
+.cadastro {
+  height: 78vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.cadastro .card {
+  width: 70%;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  border-radius: 1.2rem;
+  min-height: 700px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
+  animation: top-to-down 200ms 200ms backwards;
+}
+
+@keyframes top-to-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cadastro .card .left {
+  flex: 1;
+  background: linear-gradient(rgba(2, 0, 36, 0.50), rgba(2, 0, 36, 0.50)), url("../../Assets/6b4cb8b6ad99f8750f2eda7a9d1218d5.gif") center;
+  background-size: cover;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+
+.cadastro .card .left h1 {
+  text-align: left;
+  font-size: 10rem;
+  line-height: 10rem;
+}
+
+.cadastro .card .left p {
+  text-align: left;
+  font-size: 3.2rem;
+}
+.cadastro .card .left span {
+  text-align: left;
+  font-size: 2rem;
+}
+
+.cadastro .card .left button {
+  width: 30%;
+  float: left;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: none;
+  font-size: 1.8rem;
+  background-color: #E195FC;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 3rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.cadastro .card .left button:hover {
+  transform: scale(1.1);
+  background-color: #CC4BFA;
+}
+
+.cadastro .card .right {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+
+.cadastro .card .right h1 {
+  font-size: 5.4rem;
+  color: #555;
+}
+
+.cadastro .card .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cadastro .card .right form input {
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 2rem 0.2rem;
+}
+
+.form-error {
+  color: #555;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cadastro .card .right form .button {
+  width: 40%;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  border: none;
+  font-size: 2rem;
+  align-items: center;
+  background-color: #E195FC;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 3rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.cadastro .card .right form button:hover {
+  transform: scale(1.1);
+  background-color: #CC4BFA;
+}
+
+.swal2-timer-progress-bar-container {
+  position:absolute;
+  right:0;
+  bottom:0;
+  left:0;
+  grid-column:auto !important;
+  overflow:hidden;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px
+ }
+ 
+.swal2-timer-progress-bar {
+  width:100%;
+  background-color:#5E1678 !important;
+  height:0.5rem;
+  background:rgba(0,0,0,.2)
+ }

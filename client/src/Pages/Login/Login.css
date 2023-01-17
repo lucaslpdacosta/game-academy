@@ -1,0 +1,149 @@
+.login {
+  height: 78vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.login .card {
+  width: 70%;
+  display: flex;
+  background-color: white;
+  border-radius: 1.2rem;
+  min-height: 700px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
+  animation: top-to-down 200ms 200ms backwards;
+}
+
+@keyframes top-to-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login .card .left {
+  flex: 1;
+  background: linear-gradient(rgba(2, 0, 36, 0.50), rgba(2, 0, 36, 0.50)), url("../../Assets/ezgif.com-gif-maker.gif") center;
+  background-size: cover;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+
+.login .card .left h1 {
+  text-align: left;
+  font-size: 10rem;
+  line-height: 10rem;
+}
+
+.login .card .left p {
+  font-size: 3.2rem;
+  text-align: left;
+}
+
+.login .card .left span {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.login .card .left button {
+  width: 30%;
+  float: left;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border: none;
+  font-size: 1.8rem;
+  align-items: center;
+  background-color: #E195FC;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 3rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.login .card .left button:hover {
+  transform: scale(1.1);
+  background-color: #CC4BFA;
+}
+
+.login .card .right {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+
+.login .card .right h1 {
+  font-size: 5.4rem;
+  color: #555;
+}
+
+.login .card .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login .card .right form input {
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 2rem 0.2rem;
+}
+
+.form-error {
+  color: #555;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.login .card .right form button {
+  width: 30%;
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  border: none;
+  font-size: 2rem;
+  align-items: center;
+  background-color: #E195FC;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 3rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.login .card .right form button:hover {
+  transform: scale(1.1);
+  background-color: #CC4BFA;
+}
+
+.footer {
+  position: fixed;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+.footer p {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+}
